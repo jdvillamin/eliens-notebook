@@ -19,7 +19,7 @@ public:
   SegTreeNode(const vector<InType>& a, int i, int j) : i(i), j(j) {
     if (j - i == 1) {
       lc = rc = nullptr;
-      val = a[i];
+      val = (T) a[i];
       return;
     }
     int k = (i + j) / 2;
@@ -48,7 +48,7 @@ public:
       val = operation(lc->val, rc->val);
     }
   }
-  T range_query(int l, int r) { // [l, r)
+  T range_query(int l, int r) {
     propagate();
     if (l <= i && j <= r) return val;
     if (j <= l || r <= i) return IDN;
@@ -59,9 +59,9 @@ public:
 template<typename T, typename InType = T>
 class SegTree {
 public:
-    SegTreeNode<T, InType> root;
-    SegTree(int n) : root(0, n) {}
-    SegTree(const vector<InType>& a) : root(a, 0, a.size()) {}
-    void range_add(int l, int r, T delta) { root.range_add(l, r, delta); }
-    T range_query(int l, int r) { return root.range_query(l, r); }
+  SegTreeNode<T, InType> root;
+  SegTree(int n) : root(0, n) {}
+  SegTree(const vector<InType>& a) : root(a, 0, a.size()) {}
+  void range_add(int l, int r, T delta) { root.range_add(l, r, delta); }
+  T range_query(int l, int r) { return root.range_query(l, r); }
 };

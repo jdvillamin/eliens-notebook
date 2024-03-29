@@ -19,7 +19,7 @@ public:
   SegTreeNode(const vector<InType>& a, int i, int j) : i(i), j(j) {
     if (j - i == 1) {
       lc = rc = nullptr;
-      val = a[i];
+      val = (T) a[i];
       return;
     }
     int k = (i + j) / 2;
@@ -27,17 +27,17 @@ public:
     rc = new SegTreeNode<T, InType>(a, k, j);
     val = op(lc->val, rc->val);
   }
-  void set(int k, T x) { // update a[k] := x
+  void set(int k, T x) {
     if (k < i || j <= k) return;
     if (j - i == 1) {
-        val = x;
-        return;
+      val = x;
+      return;
     }
     lc->set(k, x);
     rc->set(k, x);
     val = op(lc->val, rc->val);
   }
-  T range_query(int l, int r) { // [l, r)
+  T range_query(int l, int r) {
     if (l <= i && j <= r) return val;
     if (j <= l || r <= i) return IDN;
     return op(lc->range_query(l, r), rc->range_query(l, r));

@@ -32,12 +32,12 @@ graph_theory/hierholzer.cpp	Hierholzer
 graph_theory/is_bipartite.cpp	Is Bipartite
 graph_theory/is_cyclic.cpp	Is Cyclic
 graph_theory/kahn.cpp	Kahn
+graph_theory/kosaraju.cpp	Kosaraju
 graph_theory/kruskal_mst.cpp	Kruskal Mst
 graph_theory/lowest_common_ancestor.cpp	Lowest Common Ancestor
 graph_theory/maximum_bipartite_matching.cpp	Maximum Bipartite Matching
 graph_theory/max_flow.cpp	Max Flow
 graph_theory/prim_mst.cpp	Prim Mst
-graph_theory/strongly_connected_component.cpp	Strongly Connected Component
 graph_theory/topological_sort.cpp	Topological Sort
 
 [Miscellaneous]

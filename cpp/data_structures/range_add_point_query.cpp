@@ -7,25 +7,25 @@ public:
   SegTreeNode<T, InType>* lc, * rc;
   SegTreeNode(int i, int j) : i(i), j(j) {
     if (j - i == 1) {
-      val = DEF;
       lc = rc = nullptr;
+      val = DEF;
       return;
     }
-    val = 0;
     int k = (i + j) / 2;
     lc = new SegTreeNode<T, InType>(i, k);
     rc = new SegTreeNode<T, InType>(k, j);
+    val = 0;
   }
   SegTreeNode(const vector<InType>& a, int i, int j) : i(i), j(j) {
     if (j - i == 1) {
-      val = (T) a[i];
       lc = rc = nullptr;
+      val = (T) a[i];
       return;
     }
-    val = 0;
     int k = (i + j) / 2;
     lc = new SegTreeNode<T, InType>(a, i, k);
     rc = new SegTreeNode<T, InType>(a, k, j);
+    val = 0;
   }
   void range_add(int l, int r, T x) {
     if (r <= i || j <= l) return;
