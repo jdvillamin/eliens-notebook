@@ -16,6 +16,7 @@ dynamic_programming/knuth_optimization.cpp	Knuth Optimization
 dynamic_programming/longest_common_subsequence.cpp	Longest Common Subsequence
 dynamic_programming/longest_increasing_subsequence.cpp	Longest Increasing Subsequence
 dynamic_programming/subset_sum.cpp	Subset Sum
+dynamic_programming/max_sum.cpp	Maximum Subarray Sum
 
 [Geometry]
 geometry/basic_geometry.cpp	Basic Geometry
@@ -85,4 +86,7 @@ strings/manacher.cpp	Manacher
 strings/rabin_karp.cpp	Rabin Karp
 strings/suffix_array.cpp	Suffix Array
 strings/z_function.cpp	Z Function
+
+[References]
+references/ref.cpp	Cheatsheet
 

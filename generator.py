@@ -83,7 +83,7 @@ if __name__ == "__main__":
     latexmk_options = ""
 
     if basepath == 'pegaraw':
-        latexmk_options = ["latexmk", "-pdf", "pegaraw_notebook.tex"]
+        latexmk_options = ["latexmk", "-pdf", "-f", "pegaraw_notebook.tex"]
     else:
         latexmk_options = ["latexmk", "-pdf", "eliens_notebook_"+basepath+".tex"]
         

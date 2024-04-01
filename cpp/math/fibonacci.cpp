@@ -16,8 +16,11 @@ Properties:
 - sum[i=1..n]f[2i] = f[2n+1] - 1
 - sum[i=1..n]f[i]^2 = f[n]f[n+1]
 Fibonacci encoding:
-1. Iterate through the Fibonacci numbers from the largest to the smallest until you find one less than or equal to n.
-2. Suppose this number was F_i. Subtract F_i from n and put a 1 in the i-2 position of the code word (indexing from 0 from the leftmost to the rightmost bit).
+1. Iterate through the Fibonacci numbers from the largest to the 
+smallest until you find one less than or equal to n.
+2. Suppose this number was F_i. Subtract F_i from n and put a 1 
+in the i-2 position of the code word (indexing from 0 from the 
+leftmost to the rightmost bit).
 3. Repeat until there is no remainder.
 4. Add a final 1 to the codeword to indicate its end.
 Closed-form: f[n] = (((1 + rt(5))/2)^n - ((1 - rt(5)) / 2)^n)/rt(5)
