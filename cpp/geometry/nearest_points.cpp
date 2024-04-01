@@ -7,9 +7,7 @@ struct cmp_x {
   }
 };
 struct cmp_y {
-  bool operator()(const pt & a, const pt & b) const {
-    return a.y < b.y;
-  }
+  bool operator()(const pt & a, const pt & b) const { return a.y < b.y; }
 };
 ll n;
 vector<pt> a;
@@ -25,11 +23,9 @@ void upd_ans(const pt & a, const pt & b) {
 vector<pt> t;
 void rec(ll l, ll r) {
   if (r - l <= 3) {
-    for (ll i = l; i < r; ++i) {
-      for (ll j = i + 1; j < r; ++j) {
+    for (ll i = l; i < r; ++i)
+      for (ll j = i + 1; j < r; ++j)
         upd_ans(a[i], a[j]);
-      }
-    }
     sort(a.begin() + l, a.begin() + r, cmp_y());
     return;
   }
@@ -41,9 +37,8 @@ void rec(ll l, ll r) {
   ll tsz = 0;
   for (ll i = l; i < r; ++i) {
     if (abs(a[i].x - midx) < mindist) {
-      for (ll j = tsz - 1; j >= 0 && a[i].y - t[j].y < mindist; --j) {
+      for (ll j = tsz - 1; j >= 0 && a[i].y - t[j].y < mindist; --j)
         upd_ans(a[i], t[j]);
-      }
       t[tsz++] = a[i];
     }
   }

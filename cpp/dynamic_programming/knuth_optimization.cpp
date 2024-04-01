@@ -1,9 +1,9 @@
 ll solve() {
   ll N;
-  // read N and input
+  ... // Read input
   vector<vector<ll>> dp(N, vector<ll>(N)), opt(N, vector<ll>(N));
   auto C = [&](ll i, ll j) {
-    // Implement cost function C.
+    ... // Implement cost function C.
   };
   for (ll i = 0; i < N; i++) {
     opt[i][i] = i;

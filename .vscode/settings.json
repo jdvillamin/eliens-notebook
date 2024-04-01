@@ -19,7 +19,9 @@
         "span": "cpp",
         "stacktrace": "cpp",
         "regex": "cpp",
-        "thread": "cpp"
+        "thread": "cpp",
+        "cmath": "cpp",
+        "complex": "cpp"
     },
     "editor.tabSize": 2
 }
