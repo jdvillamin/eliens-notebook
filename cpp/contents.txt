@@ -15,16 +15,21 @@ dynamic_programming/knapsack.cpp	Knapsack
 dynamic_programming/knuth_optimization.cpp	Knuth Optimization
 dynamic_programming/longest_common_subsequence.cpp	Longest Common Subsequence
 dynamic_programming/longest_increasing_subsequence.cpp	Longest Increasing Subsequence
+dynamic_programming/max_sum.cpp	Max Sum
 dynamic_programming/subset_sum.cpp	Subset Sum
-dynamic_programming/max_sum.cpp	Maximum Subarray Sum
 
 [Geometry]
+geometry/areas.cpp	Areas
 geometry/basic_geometry.cpp	Basic Geometry
 geometry/circle_line_intersection.cpp	Circle Line Intersection
 geometry/convex_hull.cpp	Convex Hull
+geometry/count_lattices.cpp	Count Lattices
 geometry/line_intersection.cpp	Line Intersection
 geometry/line_sweep.cpp	Line Sweep
+geometry/minkowski_sum.cpp	Minkowski Sum
 geometry/nearest_points.cpp	Nearest Points
+geometry/point_in_convex.cpp	Point In Convex
+geometry/segment_intersection.cpp	Segment Intersection
 
 [Graph Theory]
 graph_theory/articulation_point.cpp	Articulation Point
@@ -45,7 +50,6 @@ graph_theory/is_cyclic.cpp	Is Cyclic
 graph_theory/kahn.cpp	Kahn
 graph_theory/kosaraju.cpp	Kosaraju
 graph_theory/kruskals.cpp	Kruskals
-graph_theory/kruskal_mst.cpp	Kruskal Mst
 graph_theory/kuhn.cpp	Kuhn
 graph_theory/lowest_common_ancestor.cpp	Lowest Common Ancestor
 graph_theory/maximum_bipartite_matching.cpp	Maximum Bipartite Matching
@@ -75,6 +79,9 @@ math/tonelli_shanks.cpp	Tonelli Shanks
 miscellaneous/gauss.cpp	Gauss
 miscellaneous/ternary_search.cpp	Ternary Search
 
+[References]
+references/ref.cpp	Ref
+
 [Strings]
 strings/count_unique_substrings.cpp	Count Unique Substrings
 strings/finding_repetitions.cpp	Finding Repetitions
@@ -86,7 +93,4 @@ strings/manacher.cpp	Manacher
 strings/rabin_karp.cpp	Rabin Karp
 strings/suffix_array.cpp	Suffix Array
 strings/z_function.cpp	Z Function
-
-[References]
-references/ref.cpp	Cheatsheet
 
