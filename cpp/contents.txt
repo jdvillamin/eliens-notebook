@@ -4,7 +4,9 @@ data_structures/minimum_queue.cpp	Minimum Queue
 data_structures/range_add_point_query.cpp	Range Add Point Query
 data_structures/range_add_range_query.cpp	Range Add Range Query
 data_structures/segment_tree.cpp	Segment Tree
+data_structures/segment_tree_2d.cpp	Segment Tree 2d
 data_structures/sparse_table.cpp	Sparse Table
+data_structures/sparse_table_2d.cpp	Sparse Table 2d
 
 [Dynamic Programming]
 dynamic_programming/divide_and_conquer.cpp	Divide And Conquer
@@ -26,19 +28,27 @@ graph_theory/articulation_point.cpp	Articulation Point
 graph_theory/bellman_ford.cpp	Bellman Ford
 graph_theory/bridge.cpp	Bridge
 graph_theory/dijkstra.cpp	Dijkstra
+graph_theory/dinics.cpp	Dinics
+graph_theory/edmonds_karp.cpp	Edmonds Karp
+graph_theory/fast_second_mst.cpp	Fast Second Mst
 graph_theory/find_cycle.cpp	Find Cycle
 graph_theory/floyd_warshall.cpp	Floyd Warshall
+graph_theory/ford_fulkerson.cpp	Ford Fulkerson
 graph_theory/hierholzer.cpp	Hierholzer
+graph_theory/hungarian.cpp	Hungarian
 graph_theory/is_bipartite.cpp	Is Bipartite
 graph_theory/is_cyclic.cpp	Is Cyclic
 graph_theory/kahn.cpp	Kahn
 graph_theory/kosaraju.cpp	Kosaraju
+graph_theory/kruskals.cpp	Kruskals
 graph_theory/kruskal_mst.cpp	Kruskal Mst
+graph_theory/kuhn.cpp	Kuhn
 graph_theory/lowest_common_ancestor.cpp	Lowest Common Ancestor
 graph_theory/maximum_bipartite_matching.cpp	Maximum Bipartite Matching
-graph_theory/max_flow.cpp	Max Flow
-graph_theory/prim_mst.cpp	Prim Mst
+graph_theory/min_cost_flow.cpp	Min Cost Flow
+graph_theory/prim.cpp	Prim
 graph_theory/topological_sort.cpp	Topological Sort
+graph_theory/zero_one_bfs.cpp	Zero One Bfs
 
 [Miscellaneous]
 miscellaneous/gauss.cpp	Gauss
@@ -56,8 +66,13 @@ number_theory/segmented_sieve.cpp	Segmented Sieve
 number_theory/tonelli_shanks.cpp	Tonelli Shanks
 
 [Strings]
+strings/count_unique_substrings.cpp	Count Unique Substrings
+strings/finding_repetitions.cpp	Finding Repetitions
+strings/group_identical_substrings.cpp	Group Identical Substrings
 strings/hashing.cpp	Hashing
 strings/knuth_morris_pratt.cpp	Knuth Morris Pratt
+strings/longest_common_prefix.cpp	Longest Common Prefix
+strings/manacher.cpp	Manacher
 strings/rabin_karp.cpp	Rabin Karp
 strings/suffix_array.cpp	Suffix Array
 strings/z_function.cpp	Z Function
