@@ -80,6 +80,7 @@ math/tonelli_shanks.cpp	Tonelli Shanks
 
 [Miscellaneous]
 miscellaneous/gauss.cpp	Gauss
+miscellaneous/techniques.cpp	Techniques
 miscellaneous/ternary_search.cpp	Ternary Search
 
 [References]
