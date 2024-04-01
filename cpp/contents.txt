@@ -12,6 +12,7 @@ data_structures/sparse_table_2d.cpp	Sparse Table 2d
 data_structures/sqrt_decomposition.cpp	Sqrt Decomposition
 
 [Dynamic Programming]
+dynamic_programming/digit_dp.cpp	Digit Dp
 dynamic_programming/divide_and_conquer.cpp	Divide And Conquer
 dynamic_programming/edit_distance.cpp	Edit Distance
 dynamic_programming/knapsack.cpp	Knapsack
