@@ -1,3 +1,15 @@
+/*
+Matrix exponentation:
+f[n] = af[n-1] + bf[n-2] + cf[n-3]
+Use:
+|f[n]  | |a b c||f[n-1]|
+|f[n-1]|=|1 0 0||f[n-2]|
+|f[n-2]| |0 1 0||f[n-3]|
+To get:
+|f[n]  | |a b c|^(n-2)|f[2]|
+|f[n-1]|=|1 0 0|      |f[1]|
+|f[n-2]| |0 1 0|      |f[0]|
+*/
 struct Matrix { int mat[MAX_N][MAX_N]; };
 Matrix matrix_mul(Matrix a, Matrix b) {
   Matrix ans; int i, j, k;
