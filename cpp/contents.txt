@@ -1,12 +1,14 @@
 [Data Structures]
 data_structures/disjoint_set_union.cpp	Disjoint Set Union
 data_structures/minimum_queue.cpp	Minimum Queue
+data_structures/mo.cpp	Mo
 data_structures/range_add_point_query.cpp	Range Add Point Query
 data_structures/range_add_range_query.cpp	Range Add Range Query
 data_structures/segment_tree.cpp	Segment Tree
 data_structures/segment_tree_2d.cpp	Segment Tree 2d
 data_structures/sparse_table.cpp	Sparse Table
 data_structures/sparse_table_2d.cpp	Sparse Table 2d
+data_structures/sqrt_decomposition.cpp	Sqrt Decomposition
 
 [Dynamic Programming]
 dynamic_programming/divide_and_conquer.cpp	Divide And Conquer
