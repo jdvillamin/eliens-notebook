@@ -1,22 +1,23 @@
-void dijkstra(ll n, vector<vector<pair<ll, ll>>> &adj, vector<ll> &dis) {
-  priority_queue<pair<ll, ll>, vector<pair<ll, ll>>, greater<pair<ll, ll>>> pq;
-  for (int i = 0; i < n; i++) {
-    dis[i] = INF;
-  }
-  dis[0] = 0;
-  pq.push({0, 0});
-  while (!pq.empty()) {
-    auto p = pq.top();
-    pq.pop();
-    ll u = p.second;
-    if (dis[u] != p.first) {
-      continue;
-    }
-    for (auto x : adj[u]) {
-      ll v = x.first, w = x.second;
-      if (dis[v] > dis[u] + w) {
-        dis[v] = dis[u] + w;
-        pq.push({dis[v], v});
+const int INF = 1000000000;
+vector<vector<pair<int, int>>> adj;
+void dijkstra(int s, vector<int> & d, vector<int> & p) {
+  int n = adj.size();
+  d.assign(n, INF);
+  p.assign(n, -1);
+  d[s] = 0;
+  using pii = pair<int, int>;
+  priority_queue<pii, vector<pii>, greater<pii>> q;
+  q.push({0, s});
+  while (!q.empty()) {
+    int v = q.top().second, d_v = q.top().first;
+    q.pop();
+    if (d_v != d[v]) continue;
+    for (auto edge : adj[v]) {
+      int to = edge.first, len = edge.second;
+      if (d[v] + len < d[to]) {
+          d[to] = d[v] + len;
+          p[to] = v;
+          q.push({d[to], to});
       }
     }
   }

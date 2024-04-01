@@ -1,19 +1,35 @@
-void bellman_ford(vector<vector<ll>> &edges, ll n, ll m, ll src, vector<ll> &dis) {
-  for (ll i = 0; i < n; i++) {
-    dis[i] = INF;
+struct Edge {
+  int a, b, cost;
+};
+int n, m, v;
+vector<Edge> edges;
+const int INF = 1000000000;
+void solve() {
+  vector<int> d(n, INF);
+  d[v] = 0;
+  vector<int> p(n, -1);
+  int x;
+  for (int i = 0; i < n; ++i) {
+    x = -1;
+    for (Edge e : edges)
+      if (d[e.a] < INF)
+        if (d[e.b] > d[e.a] + e.cost) {
+          d[e.b] = max(-INF, d[e.a] + e.cost);
+          p[e.b] = e.a;
+          x = e.b;
+        }
   }
-  for (ll i = 0; i < n - 1; i++) {
-    for (ll j = 0; j < m; j++) {
-      ll u = edges[j][0], v = edges[j][1], w = edges[j][2];
-      if (dis[u] < INF) {
-        dis[v] = min(dis[v], dis[u] + w);
-      }
+  if (x == -1) cout << "No negative cycle from " << v;
+  else {
+    int y = x;
+    for (int i = 0; i < n; ++i) y = p[y];
+    vector<int> path;
+    for (int cur = y;; cur = p[cur]) {
+      path.push_back(cur);
+      if (cur == y && path.size() > 1) break;
     }
-  }
-  for (ll i = 0; i < m; i++) {
-    ll u = edges[i][0], v = edges[i][1], w = edges[i][2];
-    if (dis[u] < INF && dis[u] + w < dis[v]) {
-      cout << "The graph contains a negative cycle." << '\n';
-    }
+    reverse(path.begin(), path.end());
+    cout << "Negative cycle: ";
+    for (int u : path) cout << u << ' ';
   }
 }

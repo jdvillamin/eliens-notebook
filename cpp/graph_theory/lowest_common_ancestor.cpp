@@ -26,9 +26,8 @@ struct LCA {
     }
   }
   void build(ll node, ll b, ll e) {
-    if (b == e) {
-      segtree[node] = euler[b];
-    } else {
+    if (b == e) segtree[node] = euler[b];
+    else {
       ll mid = (b + e) / 2;
       build(node << 1, b, mid);
       build(node << 1 | 1, mid + 1, e);
@@ -37,12 +36,8 @@ struct LCA {
     }
   }
   ll query(ll node, ll b, ll e, ll L, ll R) {
-    if (b > R || e < L) {
-      return -1;
-    }
-    if (b >= L && e <= R) {
-      return segtree[node];
-    }
+    if (b > R || e < L) return -1;
+    if (b >= L && e <= R) return segtree[node];
     ll mid = (b + e) >> 1;
     ll left = query(node << 1, b, mid, L, R);
     ll right = query(node << 1 | 1, mid + 1, e, L, R);
@@ -52,9 +47,7 @@ struct LCA {
   }
   ll lca(ll u, ll v) {
     ll left = first[u], right = first[v];
-    if (left > right) {
-      swap(left, right);
-    }
+    if (left > right) swap(left, right);
     return query(1, 0, euler.size() - 1, left, right);
   }
 };
