@@ -1,9 +1,4 @@
-eliens_notebook_*.aux
-eliens_notebook_*.fls
-eliens_notebook_*.log
-eliens_notebook_*.out
-eliens_notebook_*.fdb_latexmk
-eliens_notebook_*.toc
+/.vscode
 pegaraw_notebook*.aux
 pegaraw_notebook*.fls
 pegaraw_notebook*.log
