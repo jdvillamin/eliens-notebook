@@ -1,101 +1,101 @@
-[Data Structures]
-data_structures/binary_trie.cpp	Binary Trie
-data_structures/disjoint_set_union.cpp	Disjoint Set Union
-data_structures/minimum_queue.cpp	Minimum Queue
-data_structures/mo.cpp	Mo
-data_structures/range_add_point_query.cpp	Range Add Point Query
-data_structures/range_add_range_query.cpp	Range Add Range Query
-data_structures/segment_tree.cpp	Segment Tree
-data_structures/segment_tree_2d.cpp	Segment Tree 2d
-data_structures/sparse_table.cpp	Sparse Table
-data_structures/sparse_table_2d.cpp	Sparse Table 2d
-data_structures/sqrt_decomposition.cpp	Sqrt Decomposition
-
-[Dynamic Programming]
-dynamic_programming/digit_dp.cpp	Digit Dp
-dynamic_programming/divide_and_conquer.cpp	Divide And Conquer
-dynamic_programming/edit_distance.cpp	Edit Distance
-dynamic_programming/knapsack.cpp	Knapsack
-dynamic_programming/knuth_optimization.cpp	Knuth Optimization
-dynamic_programming/longest_common_subsequence.cpp	Longest Common Subsequence
-dynamic_programming/longest_increasing_subsequence.cpp	Longest Increasing Subsequence
-dynamic_programming/max_sum.cpp	Max Sum
-dynamic_programming/subset_sum.cpp	Subset Sum
+[Strings]
+strings/manacher.cpp	Manacher
+strings/hashing.cpp	Hashing
+strings/rabin_karp.cpp	Rabin Karp
+strings/z_function.cpp	Z Function
+strings/finding_repetitions.cpp	Finding Repetitions
+strings/longest_common_prefix.cpp	Longest Common Prefix
+strings/suffix_array.cpp	Suffix Array
+strings/count_unique_substrings.cpp	Count Unique Substrings
+strings/knuth_morris_pratt.cpp	Knuth Morris Pratt
+strings/group_identical_substrings.cpp	Group Identical Substrings
 
 [Geometry]
-geometry/areas.cpp	Areas
+geometry/nearest_points.cpp	Nearest Points
+geometry/minkowski_sum.cpp	Minkowski Sum
+geometry/point_in_convex.cpp	Point In Convex
+geometry/line_sweep.cpp	Line Sweep
+geometry/line_intersection.cpp	Line Intersection
 geometry/basic_geometry.cpp	Basic Geometry
 geometry/circle_line_intersection.cpp	Circle Line Intersection
 geometry/convex_hull.cpp	Convex Hull
 geometry/count_lattices.cpp	Count Lattices
-geometry/line_intersection.cpp	Line Intersection
-geometry/line_sweep.cpp	Line Sweep
-geometry/minkowski_sum.cpp	Minkowski Sum
-geometry/nearest_points.cpp	Nearest Points
-geometry/point_in_convex.cpp	Point In Convex
 geometry/segment_intersection.cpp	Segment Intersection
+geometry/areas.cpp	Areas
 
-[Graph Theory]
-graph_theory/articulation_point.cpp	Articulation Point
-graph_theory/bellman_ford.cpp	Bellman Ford
-graph_theory/bridge.cpp	Bridge
-graph_theory/centroid_decomposition.cpp	Centroid Decomposition
-graph_theory/dijkstra.cpp	Dijkstra
-graph_theory/dinics.cpp	Dinics
-graph_theory/edmonds_karp.cpp	Edmonds Karp
-graph_theory/fast_second_mst.cpp	Fast Second Mst
-graph_theory/find_cycle.cpp	Find Cycle
-graph_theory/floyd_warshall.cpp	Floyd Warshall
-graph_theory/ford_fulkerson.cpp	Ford Fulkerson
-graph_theory/hierholzer.cpp	Hierholzer
-graph_theory/hungarian.cpp	Hungarian
-graph_theory/is_bipartite.cpp	Is Bipartite
-graph_theory/is_cyclic.cpp	Is Cyclic
-graph_theory/kahn.cpp	Kahn
-graph_theory/kosaraju.cpp	Kosaraju
-graph_theory/kruskals.cpp	Kruskals
-graph_theory/kuhn.cpp	Kuhn
-graph_theory/lowest_common_ancestor.cpp	Lowest Common Ancestor
-graph_theory/maximum_bipartite_matching.cpp	Maximum Bipartite Matching
-graph_theory/min_cost_flow.cpp	Min Cost Flow
-graph_theory/prim.cpp	Prim
-graph_theory/topological_sort.cpp	Topological Sort
-graph_theory/zero_one_bfs.cpp	Zero One Bfs
+[Dynamic Programming]
+dynamic_programming/knuth_optimization.cpp	Knuth Optimization
+dynamic_programming/knapsack.cpp	Knapsack
+dynamic_programming/divide_and_conquer.cpp	Divide And Conquer
+dynamic_programming/digit_dp.cpp	Digit Dp
+dynamic_programming/subset_sum.cpp	Subset Sum
+dynamic_programming/longest_increasing_subsequence.cpp	Longest Increasing Subsequence
+dynamic_programming/longest_common_subsequence.cpp	Longest Common Subsequence
+dynamic_programming/max_sum.cpp	Max Sum
+dynamic_programming/edit_distance.cpp	Edit Distance
 
 [Math]
 math/chinese_remainder_theorem.cpp	Chinese Remainder Theorem
 math/extended_euclidean.cpp	Extended Euclidean
-math/factorial_modulo.cpp	Factorial Modulo
-math/fast_fourier_transform.cpp	Fast Fourier Transform
-math/fibonacci.cpp	Fibonacci
-math/find_all_solutions.cpp	Find All Solutions
-math/linear_sieve.cpp	Linear Sieve
-math/matrix.cpp	Matrix
-math/miller_rabin.cpp	Miller Rabin
 math/modulo_inverse.cpp	Modulo Inverse
-math/pollard_rho_brent.cpp	Pollard Rho Brent
-math/range_sieve.cpp	Range Sieve
-math/segmented_sieve.cpp	Segmented Sieve
 math/sum_of_divisors.cpp	Sum Of Divisors
+math/range_sieve.cpp	Range Sieve
+math/pollard_rho_brent.cpp	Pollard Rho Brent
+math/factorial_modulo.cpp	Factorial Modulo
+math/matrix.cpp	Matrix
+math/find_all_solutions.cpp	Find All Solutions
+math/miller_rabin.cpp	Miller Rabin
+math/fibonacci.cpp	Fibonacci
+math/fast_fourier_transform.cpp	Fast Fourier Transform
+math/segmented_sieve.cpp	Segmented Sieve
+math/linear_sieve.cpp	Linear Sieve
 math/tonelli_shanks.cpp	Tonelli Shanks
 
 [Miscellaneous]
-miscellaneous/gauss.cpp	Gauss
 miscellaneous/techniques.cpp	Techniques
+miscellaneous/gauss.cpp	Gauss
 miscellaneous/ternary_search.cpp	Ternary Search
+
+[Data Structures]
+data_structures/segment_tree_2d.cpp	Segment Tree 2d
+data_structures/range_add_point_query.cpp	Range Add Point Query
+data_structures/disjoint_set_union.cpp	Disjoint Set Union
+data_structures/sparse_table_2d.cpp	Sparse Table 2d
+data_structures/mo.cpp	Mo
+data_structures/sparse_table.cpp	Sparse Table
+data_structures/binary_trie.cpp	Binary Trie
+data_structures/segment_tree.cpp	Segment Tree
+data_structures/sqrt_decomposition.cpp	Sqrt Decomposition
+data_structures/minimum_queue.cpp	Minimum Queue
+data_structures/range_add_range_query.cpp	Range Add Range Query
+
+[Graph Theory]
+graph_theory/bridge.cpp	Bridge
+graph_theory/dijkstra.cpp	Dijkstra
+graph_theory/zero_one_bfs.cpp	Zero One Bfs
+graph_theory/hungarian.cpp	Hungarian
+graph_theory/ford_fulkerson.cpp	Ford Fulkerson
+graph_theory/prim.cpp	Prim
+graph_theory/centroid_decomposition.cpp	Centroid Decomposition
+graph_theory/kahn.cpp	Kahn
+graph_theory/dinics.cpp	Dinics
+graph_theory/floyd_warshall.cpp	Floyd Warshall
+graph_theory/kosaraju.cpp	Kosaraju
+graph_theory/maximum_bipartite_matching.cpp	Maximum Bipartite Matching
+graph_theory/kruskals.cpp	Kruskals
+graph_theory/is_cyclic.cpp	Is Cyclic
+graph_theory/find_cycle.cpp	Find Cycle
+graph_theory/topological_sort.cpp	Topological Sort
+graph_theory/min_cost_flow.cpp	Min Cost Flow
+graph_theory/kuhn.cpp	Kuhn
+graph_theory/articulation_point.cpp	Articulation Point
+graph_theory/hierholzer.cpp	Hierholzer
+graph_theory/lowest_common_ancestor.cpp	Lowest Common Ancestor
+graph_theory/bellman_ford.cpp	Bellman Ford
+graph_theory/edmonds_karp.cpp	Edmonds Karp
+graph_theory/is_bipartite.cpp	Is Bipartite
+graph_theory/fast_second_mst.cpp	Fast Second Mst
 
 [References]
 references/ref.cpp	Ref
-
-[Strings]
-strings/count_unique_substrings.cpp	Count Unique Substrings
-strings/finding_repetitions.cpp	Finding Repetitions
-strings/group_identical_substrings.cpp	Group Identical Substrings
-strings/hashing.cpp	Hashing
-strings/knuth_morris_pratt.cpp	Knuth Morris Pratt
-strings/longest_common_prefix.cpp	Longest Common Prefix
-strings/manacher.cpp	Manacher
-strings/rabin_karp.cpp	Rabin Karp
-strings/suffix_array.cpp	Suffix Array
-strings/z_function.cpp	Z Function
 

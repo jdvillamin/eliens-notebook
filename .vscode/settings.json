@@ -1,27 +1,13 @@
 {
-    "editor.formatOnSave": false,
     "files.associations": {
-        "*html": "html",
-        "vector": "cpp",
-        "system_error": "cpp",
-        "xstring": "cpp",
-        "tuple": "cpp",
+        "*.ejs": "html",
         "array": "cpp",
+        "deque": "cpp",
+        "list": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "vector": "cpp",
         "string_view": "cpp",
-        "initializer_list": "cpp",
-        "longest_common_prefix": "c",
-        "chrono": "cpp",
-        "random": "cpp",
-        "limits": "cpp",
-        "valarray": "cpp",
-        "any": "cpp",
-        "ranges": "cpp",
-        "span": "cpp",
-        "stacktrace": "cpp",
-        "regex": "cpp",
-        "thread": "cpp",
-        "cmath": "cpp",
-        "complex": "cpp"
-    },
-    "editor.tabSize": 2
+        "initializer_list": "cpp"
+    }
 }

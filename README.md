@@ -16,7 +16,7 @@ python3 generator.py <python3|cpp>
 ```
 
 ## Adding Code
-The codes are placed in `cpp` and `python3` folders. Each directories inside these folders should follow the **snake case convention**. Directories should represent a topic in competitive programming, i.e `data_structures`. Every subdirectories should contain files in `.cpp` or `.py` and should also follow the snake case convention.
+The codes are placed in `cpp` and `python3` folders. Each directories inside these folders should follow the **snake case convention**. Directories should represent a topic in competitive programming, e.g. `data_structures`. Every subdirectories should contain files in `.cpp` or `.py` and should also follow the snake case convention.
 
 ### Sample folder structure
 ```
@@ -27,7 +27,7 @@ cpp
 
 ## Generating contents.txt
 ```
-python3 makecontents.py <python3|cpp>
+python3 make_contents.py <python3|cpp>
 ```
 
 ##  Clean Up

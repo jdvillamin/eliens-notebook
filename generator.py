@@ -73,18 +73,13 @@ if __name__ == "__main__":
     if len(sys.argv) == 0:
         print('Usage : %s <python3|cpp>' % sys.argv[0])
     basepath = sys.argv[1]
-    assert basepath in ('python3', 'cpp', 'pegaraw')
-    sections = get_sections('cpp' if basepath == 'pegaraw' else basepath)
+    assert basepath in ('python3', 'cpp')
+    sections = get_sections(basepath)
     tex = get_tex(sections)
-    
-    with open('contents_'+basepath+'.tex', 'w') as f:
+
+    with open('contents_pegaraw.tex', 'w') as f:
         f.write(tex)
 
-    latexmk_options = ""
+    latexmk_options = latexmk_options = ["latexmk", "-pdf", "-f", "pegaraw_notebook.tex"]
 
-    if basepath == 'pegaraw':
-        latexmk_options = ["latexmk", "-pdf", "-f", "pegaraw_notebook.tex"]
-    else:
-        latexmk_options = ["latexmk", "-pdf", "eliens_notebook_"+basepath+".tex"]
-        
     subprocess.call(latexmk_options)
