@@ -32,6 +32,7 @@ dynamic_programming/subset_sum.cpp	Subset Sum
 dynamic_programming/longest_increasing_subsequence.cpp	Longest Increasing Subsequence
 dynamic_programming/longest_common_subsequence.cpp	Longest Common Subsequence
 dynamic_programming/max_sum.cpp	Max Sum
+dynamic_programming/bitmask_weights.cpp	Bitmask Weights
 dynamic_programming/edit_distance.cpp	Edit Distance
 
 [Math]
@@ -97,5 +98,9 @@ graph_theory/is_bipartite.cpp	Is Bipartite
 graph_theory/fast_second_mst.cpp	Fast Second Mst
 
 [References]
-references/ref.cpp	Ref
+references/stack.cpp	Stack
+references/queue.cpp	Queue
+references/syntax.cpp	Syntax
+references/priority_queue.cpp	Priority Queue
+references/vector.cpp	Vector
 
