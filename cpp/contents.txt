@@ -100,6 +100,7 @@ graph_theory/fast_second_mst.cpp	Fast Second Mst
 [References]
 references/stack.cpp	Stack
 references/queue.cpp	Queue
+references/set.cpp	Set
 references/syntax.cpp	Syntax
 references/priority_queue.cpp	Priority Queue
 references/vector.cpp	Vector

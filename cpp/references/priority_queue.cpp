@@ -6,9 +6,7 @@ priority_queue<T, vector<T>, greater<T>> pq;
 class Compare {
 public:
   bool operator() (T a, T b) {
-    if (cond) {
-        return true; // do not swap
-    }
+    if (cond) return true; // do not swap
     return false;
   } 
 };

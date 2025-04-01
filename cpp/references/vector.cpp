@@ -19,7 +19,7 @@ binary_search(v.begin(), v.end(), x);
 // sort
 sort(v.begin(), v.end());
 sort(v.rbegin(), v.rend()); // reverse iterators
-sort(v.begin(), v.end(), greater<T>); // using functor
+sort(v.begin(), v.end(), greater<T>()); // using functor
 bool comp(T a, T b) {
   if (cond) {
     return true; // do not swap

@@ -1,12 +1,3 @@
-// set
-st.insert(x)
-st.begin()
-st.find(x)
-st.count(x)
-st.erase(x)
-st.end()
-st.size()
-st.empty()
 // multiset
 ms.insert(x)
 ms.begin()
