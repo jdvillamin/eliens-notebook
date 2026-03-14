@@ -80,6 +80,7 @@ if __name__ == "__main__":
     with open('contents_pegaraw.tex', 'w') as f:
         f.write(tex)
 
-    latexmk_options = latexmk_options = ["latexmk", "-pdf", "-f", "pegaraw_notebook.tex"]
+    latexmk_options = latexmk_options = [
+        "latexmk", "-pdf", "-f", "pegaraw_notebook.tex"]
 
     subprocess.call(latexmk_options)
