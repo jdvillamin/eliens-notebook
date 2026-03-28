@@ -1,20 +1,18 @@
-bool is_bipartite(vector<ll> &col, vector<vector<ll>> &adj, ll n) {
-  queue<pair<ll, ll>> q;
+bool is_bipartite(vector<ll>& col, vector<vector<ll>>& adj, ll n) {
+  queue<ll> q;
   for (ll i = 0; i < n; i++) {
     if (col[i] == -1) {
-      q.push({i, 0});
+      q.push(i);
       col[i] = 0;
       while (!q.empty()) {
-        pair<ll, ll> p = q.front();
+        ll u = q.front();
         q.pop();
-        ll v = p.first, c = p.second;
-        for (ll j : adj[v]) {
-          if (col[j] == c) {
+        for (ll v : adj[u]) {
+          if (col[v] == -1) {
+            col[v] = col[u] ^ 1;
+            q.push(v);
+          } else if (col[u] == col[v]) {
             return false;
-          }
-          if (col[j] == -1) {
-            col[j] = (c ? 0 : 1);
-            q.push({j, col[j]});
           }
         }
       }

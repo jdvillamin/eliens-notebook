@@ -1,9 +1,10 @@
-ll compute_hash(string const& s) {
-  const ll p = 31, m = 1e9 + 9;
-  ll hash_value = 0, p_pow = 1;
-  for (char c : s) {
-    hash_value = (hash_value + (c - 'a' + 1) * p_pow) % m;
-    p_pow = (p_pow * p) % m;
-  }
-  return hash_value;
+vector<ll> h(n), p(n);
+h[0] = s[0];
+p[0] = 1;
+for (int i = 1; i < n; i++) {
+  h[i] = (h[i - 1] * A + s[i]) % B;
+  p[i] = p[i] * A % B;
 }
+auto hash = [&](int i, int j) -> ll {
+  return (h[j] - (i > 0 ? h[i - 1] * p[j - i + 1] % B : 0) + B) % B;
+};

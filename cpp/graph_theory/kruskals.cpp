@@ -1,8 +1,6 @@
 struct Edge {
   int u, v, weight;
-  bool operator<(Edge const& other) {
-    return weight < other.weight;
-  }
+  bool operator<(Edge const& other) { return weight < other.weight; }
 };
 int n;
 vector<Edge> edges;
