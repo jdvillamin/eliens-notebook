@@ -18,13 +18,16 @@ strings/rabin_karp.cpp	Rabin Karp
 strings/z_function.cpp	Z Function
 strings/longest_common_prefix.cpp	Longest Common Prefix
 
+[Trees]
+trees/lca_eulers_tour.cpp	Lca Eulers Tour
+trees/lca_binary_lifting.cpp	Lca Binary Lifting
+
 [Graph Theory]
 graph_theory/hierholzer.cpp	Hierholzer
 graph_theory/min_cost_flow.cpp	Min Cost Flow
 graph_theory/kruskals.cpp	Kruskals
 graph_theory/maximum_bipartite_matching.cpp	Maximum Bipartite Matching
 graph_theory/bridge.cpp	Bridge
-graph_theory/lowest_common_ancestor.cpp	Lowest Common Ancestor
 graph_theory/ford_fulkerson.cpp	Ford Fulkerson
 graph_theory/is_bipartite.cpp	Is Bipartite
 graph_theory/kosaraju.cpp	Kosaraju

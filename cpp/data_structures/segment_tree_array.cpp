@@ -14,7 +14,7 @@ struct SegTree {
       t[k >> 1] = min(t[k], t[k ^ 1]);
     }
   }
-  int query(int a, int b) {
+  int query(int a, int b) { // [a, b)
     int mn = INF;
     for (a += n, b += n; a < b; a >>= 1, b >>= 1) {
       if (a & 1) mn = min(mn, t[a++]);
