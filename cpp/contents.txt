@@ -13,6 +13,7 @@ strings/group_identical_substrings.cpp	Group Identical Substrings
 strings/suffix_array.cpp	Suffix Array
 strings/knuth_morris_pratt.cpp	Knuth Morris Pratt
 strings/finding_repetitions.cpp	Finding Repetitions
+strings/suffix_automaton.cpp	Suffix Automaton
 strings/manacher.cpp	Manacher
 strings/rabin_karp.cpp	Rabin Karp
 strings/z_function.cpp	Z Function
@@ -57,6 +58,7 @@ math/find_all_solutions.cpp	Find All Solutions
 math/fast_fourier_transform.cpp	Fast Fourier Transform
 math/factorial_modulo.cpp	Factorial Modulo
 math/chinese_remainder_theorem.cpp	Chinese Remainder Theorem
+math/mobius_function.cpp	Mobius Function
 math/matrix.cpp	Matrix
 math/miller_rabin.cpp	Miller Rabin
 math/segmented_sieve.cpp	Segmented Sieve
