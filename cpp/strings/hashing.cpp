@@ -1,5 +1,5 @@
 const int A = 911382323, B = 972663749;
-const int A2 = 31, B2 = 1'000'000'009;
+const int A2 = 31, B2 = 1000000009;
 vector<ll> h(n), p(n);
 h[0] = s[0];
 p[0] = 1;
