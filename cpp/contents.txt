@@ -5,6 +5,7 @@ references/set.cpp	Set
 references/priority_queue.cpp	Priority Queue
 references/queue.cpp	Queue
 references/stack.cpp	Stack
+references/policy_based.cpp	Policy Based
 
 [Strings]
 strings/hashing.cpp	Hashing
