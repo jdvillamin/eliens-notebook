@@ -16,16 +16,6 @@ pair insert(keyvalue, mapvalue)
 erase(iterator position)
 erase(const g)
 clear()
-// ordered_set
-find_by_order(k)
-order_of_key(k)
-#include <ext/pb_ds/assoc_container.hpp>
-#include <ext/pb_ds/tree_policy.hpp>
-using namespace __gnu_pbds;
-
-#define ordered_set                              \
-    tree<int, null_type, less<int>, rb_tree_tag, \
-         tree_order_statistics_node_update>
 // tuple
 get<i>(tuple)
 make_tuple(a1, a2, ...)
@@ -41,7 +31,7 @@ advance(ptr, k)
 next(ptr, k)
 prev(ptr, k)
 // permutations
-do {} while (next_permutation(nums.begin(), nums.end()));
+do {} while (next_permutation(p.begin(), p.end()));
 // bitset
 int num = 27; // Binary representation: 11011
 bitset<10> s(string("0010011010")); // from right to left
