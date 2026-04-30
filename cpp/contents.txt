@@ -31,7 +31,6 @@ graph_theory/kruskals.cpp	Kruskals
 graph_theory/maximum_bipartite_matching.cpp	Maximum Bipartite Matching
 graph_theory/bridge.cpp	Bridge
 graph_theory/ford_fulkerson.cpp	Ford Fulkerson
-graph_theory/is_bipartite.cpp	Is Bipartite
 graph_theory/kosaraju.cpp	Kosaraju
 graph_theory/find_cycle.cpp	Find Cycle
 graph_theory/edmonds_karp.cpp	Edmonds Karp
